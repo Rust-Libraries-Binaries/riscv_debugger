@@ -1,14 +1,15 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+pub struct Debugger;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+impl Debugger {
+    pub fn new() -> Self {
+        Debugger
+    }
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    pub fn set_breakpoint(&self, file: &str, line: u32) {
+        println!("Breakpoint set at {}:{}", file, line);
+    }
+
+    pub fn start(&self) {
+        println!("Starting debugger...");
     }
 }
