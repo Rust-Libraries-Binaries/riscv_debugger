@@ -8,9 +8,9 @@
 - **Step Execution**: Step through code line-by-line or instruction-by-instruction.
 - **Variable Inspection**: Inspect and modify variables in real-time.
 - **Memory Examination**: View and edit memory contents.
-- **Instruction Tracing**: Trace the execution of instructions for detailed analysis.
-- **Live Code Profiling**: Profile code performance in real-time to identify bottlenecks.
-- **Code-Coverage Analysis**: Analyze code coverage to ensure thorough testing.
+- **Instruction Tracing**: (Coming Soon) Trace the execution of instructions for detailed analysis.
+- **Live Code Profiling**: (Coming Soon) Profile code performance in real-time to identify bottlenecks.
+- **Code-Coverage Analysis**: (Coming Soon) Analyze code coverage to ensure thorough testing.
 
 ## Benefits
 
@@ -31,10 +31,10 @@ To install `riscv_debugger`, add it to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-riscv_debugger = "0.1.0"
+riscv_debugger = "0.1.1"
 ```
 ## Example Usage
-```rust 
+```rust
 use riscv_debugger::Debugger;
 
 fn main() {
@@ -45,10 +45,25 @@ fn main() {
 
     // Start debugging
     debugger.start();
+
+    // Step over a line
+    debugger.step_over();
+
+    // Step into a function
+    debugger.step_into();
+
+    // Step out of a function
+    debugger.step_out();
+
+    // Inspect a variable
+    debugger.inspect_variable("some_variable");
+
+    // Examine memory
+    debugger.examine_memory(0x1000, 64);
 }
 ```
 ## License
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
 
 ## Author
 Ben Santora <bensatlantik@gmail.com>
