@@ -1,3 +1,7 @@
+## Archived Repository
+
+**This repository was a gift from me to the Rust and open-source community. It is no longer actively maintained and has been archived. Feel free to fork and continue development on your own.**
+
 # riscv_debugger
 
 **riscv_debugger** is a powerful, open-source debugger tailored specifically for RISC-V architectures. It equips developers with essential debugging functionalities, facilitating the identification and resolution of issues in RISC-V applications.
@@ -66,7 +70,4 @@ fn main() {
 This project is licensed under the MIT License.
 
 ## Author
-Ben Santora <bensatlantik@gmail.com>
-
-## Donate
-https://bensatlantik.github.io/
+Ben Santora 
